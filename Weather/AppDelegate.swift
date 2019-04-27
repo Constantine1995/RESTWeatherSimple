@@ -13,15 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        let url = URL(string: "https://api.darksky.net/forecast/33c25e2b45848e878a5a7e53d51bd90f/37.8267,-122.4233")!
-        
-        let networkProccer = NetworkProcessor(url: url)
-        networkProccer.downloadJSONFromURL { jsonDictionary in
-            print(jsonDictionary!)
-        }
         return true
     }
 
